@@ -1,0 +1,40 @@
+<div class="mat-elevation-z3 borda">
+    <mat-card>
+        <mat-card-title>Novo Forum</mat-card-title>
+        <form>
+            <mat-form-field>
+                <mat-label>Título</mat-label>
+                <input matInput [(ngModel)]="forum.titulo" name="titulo">
+            </mat-form-field><br/>
+    
+            <mat-form-field>
+                <mat-label>Descrição</mat-label>
+                <input matInput [(ngModel)]="forum.descricao" name="descricao">
+            </mat-form-field><br/>
+    
+            <mat-form-field>
+                <mat-label>Data</mat-label>
+                <input matInput [(ngModel)]="forum.data" type="date" name="data">
+            </mat-form-field><br/>
+    
+            <mat-form-field>
+                <mat-label>Telefone</mat-label>
+                <input matInput [(ngModel)]="forum.telefone" name="telefone">
+            </mat-form-field><br/>
+            
+            <mat-form-field>
+                <mat-label>Responsavel</mat-label>
+                <input matInput [(ngModel)]="forum.responsavel" name="responsavel">
+            </mat-form-field><br/>
+
+            <div class="borda-botao">        
+                <button mat-raised-button color="primary" (click)="incluirForum()">
+                    Incluir Forum
+                </button> |
+                <button mat-raised-button (click)="cancelar()">
+                    Fechar
+                </button>
+            </div>
+        </form>
+    </mat-card>
+</div>

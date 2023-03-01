@@ -1,6 +1,6 @@
 export class Forum {
     
-    public Id?: number;
+    public id?: number;
 
     constructor(){
         this._titulo = '';
